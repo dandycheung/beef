@@ -305,7 +305,6 @@ module BeEF
             BD.set(session_id, 'browser.language', browser_lang)
           else
             err_msg "Invalid browser language returned from the hook browser's initial connection."
-            browser_lang = 'Unknown'
           end
 
           # get and store the cookies
@@ -349,7 +348,6 @@ module BeEF
             BD.set(session_id, 'host.os.arch', os_arch)
           else
             err_msg "Invalid operating system architecture returned from the hook browser's initial connection."
-            os_arch = 'Unknown'
           end
 
           # get and store default browser
@@ -358,7 +356,6 @@ module BeEF
             BD.set(session_id, 'host.software.defaultbrowser', default_browser)
           else
             err_msg "Invalid default browser returned from the hook browser's initial connection."
-            default_browser = 'Unknown'
           end
 
           # get and store the hardware type
